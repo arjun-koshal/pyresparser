@@ -372,8 +372,7 @@ def extract_mobile_number(text, custom_regex=None):
     #     (?:\s*(?:#|x\.?|ext\.?|
     #     extension)\s*(\d+))?'''
     if not custom_regex:
-        mob_num_regex = r'''(\d{3}[-\.\s]??\d{3}[-\.\s]??\d{4}|\(\d{3}\)
-                        [-\.\s]*\d{3}[-\.\s]??\d{4}|\d{3}[-\.\s]??\d{4})'''
+        mob_num_regex = r'''(\(?\d{3}\)?[-\s]?\d{3}[-\s]?\d{4})'''
         phone = re.findall(re.compile(mob_num_regex), text)
     else:
         phone = re.findall(re.compile(custom_regex), text)
