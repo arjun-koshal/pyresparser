@@ -7,7 +7,18 @@ NAME_PATTERN = [{'POS': 'PROPN'}, {'POS': 'PROPN'}]
 EDUCATION = [
             'BE', 'B.E.', 'B.E', 'BS', 'B.S', 'ME', 'M.E',
             'M.E.', 'MS', 'M.S', 'BTECH', 'MTECH',
-            'SSC', 'HSC', 'CBSE', 'ICSE', 'X', 'XII'
+            'SSC', 'HSC', 'CBSE', 'ICSE', 'X', 'XII',
+            'BACHELOR', 'MASTER', 'DOCTORATE', 'DOCTORAL',
+            'BACHELORS', 'MASTERS', 'DOCTORATES', 'DOCTORALS',
+            'Bachelor', 'Master', 'Doctorate', 'Doctoral',
+            'Bachelors', 'Masters', 'Doctorates', 'Doctorals',
+            'Bachelor’s', 'Master’s',
+            'Bachelors of Science', 'Masters of Science', 'Doctorates of Science',
+            'Bachelors of Arts', 'Masters of Arts', 'Doctorates of Arts',
+            'Bachelors of Engineering', 'Masters of Engineering', 'Doctorates of Engineering',
+            'Bachelors of Technology', 'Masters of Technology', 'Doctorates of Technology',
+            'Bachelors of Business Administration', 'Masters of Business Administration', 'Doctorates of Business Administration'
+
         ]
 
 NOT_ALPHA_NUMERIC = r'[^a-zA-Z\d]'
