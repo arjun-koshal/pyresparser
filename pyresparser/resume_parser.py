@@ -23,17 +23,16 @@ class ResumeParser(object):
         self.__custom_regex = custom_regex
         self.__matcher = Matcher(nlp.vocab)
         self.__details = {
-            'name': None,
-            'email': None,
-            'mobile_number': None,
-            'skills': None,
-            'college_name': None,
-            'degree': None,
-            'designation': None,
-            'experience': None,
-            'company_names': None,
-            'no_of_pages': None,
-            'total_experience': None,
+            'Name': None,
+            'Email': None,
+            'Mobile_number': None,
+            'Skills': None,
+            'College_name': None,
+            'Degree': None,
+            'Designation': None,
+            'Experience': None,
+            'Company_names': None,
+            'Total_experience': None,
         }
         self.__resume = resume
         if not isinstance(self.__resume, io.BytesIO):
